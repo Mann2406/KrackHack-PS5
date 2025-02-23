@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Recognition</title>
+</head>
+<body>
+    <h1>Traffic Recognition from YouTube Live</h1>
+    <form onsubmit="startStream(event)">
+        <input type="text" id="youtube_url" placeholder="Enter YouTube Live URL" required>
+        <button type="submit">Start Detection</button>
+    </form>
+    <br>
+    <img id="video_feed" src="" width="800" height="450">
+
+    <script>
+        function startStream(event) {
+            event.preventDefault();
+            let url = document.getElementById("youtube_url").value;
+            let encodedUrl = encodeURIComponent(url);
+            document.getElementById("video_feed").src = `/youtube_feed?youtube_url=${encodedUrl}`;
+        }
+    </script>
+</body>
+</html>
