@@ -3,3 +3,5 @@ It is trained over 50k images using BDD100K dataset as of now.
 
 YT video link (Live Traffic Detection) - https://youtu.be/j1pwkwVErj8
 YT video link (pre-recorded video) - https://youtu.be/Mzxkp8zATjY
+
+The dataset mainly consisted of cars so it gives a greater accuracy for that.
